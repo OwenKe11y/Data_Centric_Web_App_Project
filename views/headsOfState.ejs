@@ -1,0 +1,27 @@
+<style>
+    
+    table, th, td{
+        border: 1px solid black;;
+    }
+
+</style>
+<h1>Heads of State</h1>
+<button><a href="\addHeadOfState">Add Heads Of State</a></button>
+<table>
+    <tr>
+        <th>Country Code</th>
+        <th>Head of State</th>
+  
+    </tr>
+    <% documents.forEach((document) =>
+        { %>
+    <tr>
+        <td><%=document._id %></td>
+        <td><%=document.headOfState%></td>
+       
+    </tr>
+    
+    <% }) %>
+</table>
+
+<a href="\">Home</a>
